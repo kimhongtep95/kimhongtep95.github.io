@@ -129,20 +129,6 @@ const portfolioData = {
       items: ["OAuth2", "JWT", "RBAC", "GitHub Actions", "Azure DevOps", "AWS"],
     },
   ],
-  education: [
-    {
-      label: "2025 - 2027",
-      title: "M.S. in Computer Science, Artificial Intelligence Focus",
-      description:
-        "Westcliff University, California. Coursework includes machine learning, deep learning, big data, database systems, and AWS/DevOps.",
-    },
-    {
-      label: "2015 - 2019",
-      title: "B.S. in Computer Science & Engineering",
-      description:
-        "Royal University of Phnom Penh, Cambodia. Strong foundation in algorithms, OOP, databases, software engineering, and networks.",
-    },
-  ],
   certifications: [
     {
       label: "2026",
@@ -247,23 +233,6 @@ function renderSkills() {
     .join("");
 }
 
-function renderEducation() {
-  const container = document.getElementById("education-list");
-  if (!container) return;
-
-  container.innerHTML = portfolioData.education
-    .map(
-      (item) => `
-        <article class="stack-item">
-          <span>${item.label}</span>
-          <h3>${item.title}</h3>
-          <p>${item.description}</p>
-        </article>
-      `,
-    )
-    .join("");
-}
-
 function renderCertificates() {
   const container = document.getElementById("certificate-list");
   if (!container) return;
@@ -338,7 +307,6 @@ renderSignalTags();
 renderProjects();
 renderExperience();
 renderSkills();
-renderEducation();
 renderCertificates();
 wireCopyEmail();
 wireRevealAnimation();
