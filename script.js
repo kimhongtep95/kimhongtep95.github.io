@@ -330,11 +330,7 @@ function setFooterContent() {
   }
 
   if (footer) {
-    footer.textContent = `Updated ${new Date().toLocaleDateString(undefined, {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    })}`;
+    footer.textContent = `© ${new Date().getFullYear()}`;
   }
 }
 
