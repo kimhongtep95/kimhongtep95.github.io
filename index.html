@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tep Kimhong | Full-Stack Engineer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for Tep Kimhong, a senior full-stack engineer specializing in Python, React, Next.js, AI integrations, and cloud architecture."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23173348'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='28' font-family='Georgia, serif' font-weight='700' fill='%23fff'%3ETK%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">
+          <span class="brand-mark">TK</span>
+          <span class="brand-copy">
+            <strong>Tep Kimhong</strong>
+            <span>Senior Full-Stack Engineer</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+        </nav>
+
+        <a
+          class="header-cta"
+          href="https://github.com/kimhongtep95"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub Profile
+        </a>
+      </header>
+
+      <main id="top">
+        <section class="hero reveal">
+          <div class="hero-copy">
+            <p class="eyebrow">Los Angeles-based engineer shipping AI-ready products</p>
+            <h1>Calm architecture, fast delivery, and products that feel ready for the real world.</h1>
+            <p class="hero-text">
+              Tep Kimhong builds production web platforms across e-commerce, internal operations, media,
+              and AI-assisted support. His stack centers on Python, React, Next.js, PostgreSQL, cloud
+              deployment, and practical systems design that scales with teams.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">See Featured Work</a>
+              <a
+                class="button button-secondary"
+                href="mailto:kimhong.tep95@gmail.com"
+              >
+                Email Kimhong
+              </a>
+              <button class="button button-ghost" type="button" data-copy-email>
+                Copy Email
+              </button>
+            </div>
+
+            <div class="stat-grid" aria-label="Highlights">
+              <article>
+                <strong>5+</strong>
+                <span>years building end-to-end software</span>
+              </article>
+              <article>
+                <strong>4</strong>
+                <span>flagship public project stories</span>
+              </article>
+              <article>
+                <strong id="repo-count">5</strong>
+                <span>public repositories on GitHub</span>
+              </article>
+              <article>
+                <strong>25%</strong>
+                <span>faster CI/CD cycle improvement</span>
+              </article>
+            </div>
+          </div>
+
+          <aside class="hero-card">
+            <div class="portrait-frame">
+              <img
+                src="https://avatars.githubusercontent.com/u/297688433?v=4"
+                alt="GitHub avatar for Tep Kimhong"
+              />
+            </div>
+
+            <div class="hero-card-body">
+              <p class="card-label">Current Focus</p>
+              <ul class="focus-list">
+                <li>AI chatbot and RAG workflows</li>
+                <li>FastAPI and Django backend architecture</li>
+                <li>React and Next.js product experiences</li>
+                <li>AWS and Azure deployment systems</li>
+              </ul>
+            </div>
+
+            <div class="contact-strip">
+              <a href="tel:+15624807901">+1 (562) 480-7901</a>
+              <a href="mailto:kimhong.tep95@gmail.com">kimhong.tep95@gmail.com</a>
+              <a href="https://github.com/kimhongtep95" target="_blank" rel="noreferrer">
+                github.com/kimhongtep95
+              </a>
+            </div>
+          </aside>
+        </section>
+
+        <section class="signal-band reveal" aria-label="Technology specialties">
+          <div class="signal-copy">
+            <p class="eyebrow">Built across product, platform, and delivery layers</p>
+            <h2>From customer-facing UX to event-driven backend systems.</h2>
+          </div>
+
+          <div class="signal-tags" id="signal-tags"></div>
+        </section>
+
+        <section class="section reveal" id="projects">
+          <div class="section-heading">
+            <p class="eyebrow">Selected Work</p>
+            <h2>GitHub repositories backed by real product narratives.</h2>
+            <p>
+              These project summaries are based on the public GitHub profile plus the experience and
+              project detail supplied in the resume.
+            </p>
+          </div>
+
+          <div class="projects-grid" id="projects-grid"></div>
+        </section>
+
+        <section class="section section-split reveal" id="experience">
+          <div class="section-heading">
+            <p class="eyebrow">Professional Experience</p>
+            <h2>Teams, systems, and delivery impact.</h2>
+          </div>
+
+          <div class="timeline" id="experience-timeline"></div>
+        </section>
+
+        <section class="section reveal" id="skills">
+          <div class="section-heading">
+            <p class="eyebrow">Technical Range</p>
+            <h2>Hands-on across frontend, backend, data, cloud, and security.</h2>
+          </div>
+
+          <div class="skills-grid" id="skills-grid"></div>
+
+          <div class="impact-grid">
+            <article class="impact-card">
+              <span>AI Delivery</span>
+              <strong>GPT-4 + LangChain + ChromaDB</strong>
+              <p>Recently delivered a production support chatbot with grounded answers through a RAG pipeline.</p>
+            </article>
+            <article class="impact-card">
+              <span>Performance</span>
+              <strong>40% to 80% faster load experiences</strong>
+              <p>Repeatedly improved startup and bundle performance by revisiting architecture, loading, and build setup.</p>
+            </article>
+            <article class="impact-card">
+              <span>Leadership</span>
+              <strong>Led a 5-engineer delivery team</strong>
+              <p>Owned planning, unblocked execution, and kept quarterly roadmap work moving from concept to production.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-paired reveal" id="education">
+          <div class="panel">
+            <div class="section-heading compact">
+              <p class="eyebrow">Education</p>
+              <h2>Computer science with an active AI focus.</h2>
+            </div>
+            <div class="stack-list" id="education-list"></div>
+          </div>
+
+          <div class="panel">
+            <div class="section-heading compact">
+              <p class="eyebrow">Certifications</p>
+              <h2>Learning that stays close to practice.</h2>
+            </div>
+            <div class="certificate-list" id="certificate-list"></div>
+          </div>
+        </section>
+
+        <section class="cta-banner reveal">
+          <div>
+            <p class="eyebrow">Let’s Build Something Useful</p>
+            <h2>Open to backend-heavy, full-stack, and AI product engineering work.</h2>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-primary" href="mailto:kimhong.tep95@gmail.com">Start a Conversation</a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/kimhongtep95?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Browse Repositories
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Tep Kimhong Portfolio</p>
+        <p>Generated from resume content and live GitHub profile metadata.</p>
+        <p id="last-updated"></p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
